@@ -1,4 +1,4 @@
-const socket = io("ws://192.168.0.102:8080");
+const socket = io("ws://192.168.200.10:8080");
 
 socket.on("message", (text) => {
   const el = document.createElement("li");
@@ -38,7 +38,7 @@ loginForm.addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch("http://192.168.0.102:3000", {
+    const res = await fetch("http://192.168.200.10:3000", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

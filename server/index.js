@@ -13,7 +13,7 @@ io.on("connection", (socket) => {
   });
 });
 
-http.listen(8080, () => console.log("listening on http://192.168.0.102:8080"));
+http.listen(8080, () => console.log("listening on http://192.168.200.10:8080"));
 
 // Regular Websockets
 
@@ -41,7 +41,7 @@ app.use(express.json());
 app.use(cors());
 
 const con = mysqli.createConnection({
-  host: "192.168.0.102",
+  host: "192.168.200.10",
   user: "root",
   password: "",
   database: "ctf_test",
@@ -63,4 +63,4 @@ con.connect(function (err) {
   console.log("Connected");
 });
 
-app.listen(3000, "192.168.0.102");
+app.listen(3000, "192.168.200.10");
