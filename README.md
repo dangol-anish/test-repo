@@ -6,11 +6,11 @@ from local pritvi
 ## Run it
 
 // prithvi changed this
+//anish also changed this
+//test2
 
 ```
 cd server
 npm install
 npm start
 ```
-
-// prithvi chaned this again!!!!
